@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+	<title>Formulários</title>
+
+	<!-- CSS -->
+	<link href="public/css/bootstrap.min.css" rel="stylesheet">
+	
+</head>
+<body style="background-color: #d5f4e6">
+
+	<div class="container">
+		<h1>Formulário</h1>
+		<form>
+			<div class="row">
+
+				<div class="col">
+					<div class="form-group">
+						<label>Digite o nome do Usuário:</label>
+						<input type="text" name="nome" class="form-control form-control-lg" placeholder="Usuário">
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="form-group">
+						<label>Digite a Senha:</label>
+						<input type="password" name="senha" class="form-control form-control-lg" placeholder="Senha">
+					</div>
+				</div>
+			
+			</div>
+			<!-- Cria um grupo do formulário que contem uma caixa de seleção 	-->
+			<div class="form-group">
+				<select class="form-control form-control-sm">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+				</select>
+			</div>
+		
+
+			<!--  Cria uma input de arquivo de tamanho sm (pequeno)
+			<input type="file" name="arquivo" class="form-control form-control-sm">
+			-->
+			<div class="form-group">
+				<input type="range" class="form-control-range">
+				<!-- Usando diabled não é possível clicar na checkbox  --> 
+				<input type="checkbox" class="form-check-input" disabled>
+				<label>Bloqueado</label>
+				<br>
+				<!-- Usando checked a checkbox é selecionada por patão --> 
+				<input type="checkbox" class="form-check-input" checked>
+				<label>Clique Aqui</label>
+				<br>
+				
+			</div>
+
+
+			<input type="submit" name="enviar" class="btn btn-primary btn-lg btn-block">
+			<br>
+			<div class="btn-group">
+				<a href="#" class="btn btn-primary active">Link 1</a>
+				<a href="#" class="btn btn-secondary">Link 2</a>
+				<a href="#" class="btn btn-outline-warning">Link 3</a>
+			</div>
+			<br><br>
+			<!--completando no final usando class input-group-append -->
+			<div class="input-group">
+				<input type="text" class="form-control" placeholder="Digite um endereço de E-mail">
+				<div class="input-group-append">
+					<span class="input-group-text">@gmail.com</span>
+				</div>
+			</div>
+			<br><br>
+			<!--Outro exemplo completando no início usando 
+			class input-group-prepend
+			 -->
+			<div class="input-group">
+				<div class="input-group-prepend">
+					<span class="input-group-text">R$</span>
+				</div>
+				<input type="text" class="form-control" placeholder="Digite um Valor">
+			</div>
+		</form>
+		
+	</div>
+
+
+	<footer>
+		<!-- JS -->
+		<script src="public/js/jquery.js"></script>
+		<script src="public/js/bootstrap.bundle.min.js"></script>
+	</footer>
+
+</body>
+</html>

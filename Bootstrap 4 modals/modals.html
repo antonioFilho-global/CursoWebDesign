@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<!-- CSS -->
+		<link rel="stylesheet" href="public/css/bootstrap.min.css">
+		<link rel="stylesheet" href="public/css/bootstrap-theme.min.css">
+
+		<meta charset="utf-8">
+		<title>Criando Modals Com Bootstrap</title>
+		<meta name="viewport" content="width=device-widht, initial-scale=1">
+	</head>
+	<body style="background-color: #d5f4e6">
+		<div class="container">
+
+			<h1>Criando Modals Com Bootstrap</h1>
+			<!--Gatilhos-->
+			<button type="button" class="btn btn-primary btn-lg " data-toggle="modal" data-target="#modal">
+				Mais Informações 
+			</button>
+
+			<!--Modal-->
+			<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelleadby="Rotulo do modal">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<!--Título do modal -->
+						<div class="modal-header">
+							<h4 class="modal-title" id="titulo">Título do Modal</h4>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+         						<span aria-hidden="true">&times;</span>
+         					</button>
+						</div>
+
+						<!--Corpo do madal -->
+						<div class="modal-body">
+							<p>Conteúdo do Modal</p>
+						</div>
+						
+						<!--Rodaper do Modal -->
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+						</div>
+
+					</div>
+				</div>
+			</div>	
+
+		</div>
+
+	</body>
+		<footer>
+			<!-- JS -->
+			<script src="public/js/jquery.js"></script>
+			<script src="public/js/bootstrap.bundle.min.js"></script> 
+			
+			
+		
+		</footer>
+	
+</html>

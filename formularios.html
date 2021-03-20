@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>  Formulários</title>
+		
+	</head>
+	<style>
+		body{
+			background-image: url(imagem.png);
+		}
+	</style>
+
+<body>
+	<p><h1>Formulários!!!!!</h1></p>
+	
+	<!-- A teg hr cria linha horizontal  -->
+	<hr><p>Formulário</p><hr>   
+	<!-- Formulário com PHP, merhod: get sem criptografia e pela url. 
+	post com criptografia -->
+	<form action="processa.php" merhod="post">  
+		<label>Nome:</label>
+		<input type="text" name="nome" placeholder="Nome completo">
+		<br>
+		<br>
+		<label>Senha:</label>
+		<input type="password" name="senha" placeholder="Senha">
+		
+		<br>
+		<br>
+		<label>Oculto</label>
+		<input type="hiddne" name="informacao_oculta" value= "mensagem oculta">
+		
+		<br>
+		<br>
+		<label>Sexo</label>
+		<select name="sexo"> 
+			<option value="m">Masculino</option>
+			<option value="f">Feminino</option>
+			<option value="o">Outros</option>
+ 		</select>
+
+ 		<br>
+ 		<br>
+ 		<label>Radio:</label>
+ 		<br>
+ 		<input type="radio" name="sexo" value="m"> Masculino<br>
+ 		<input type="radio" name="sexo" value="f"> Feminino<br>
+ 		<input type="radio" name="sexo" value="o"> Outros<br>
+
+ 		<br>
+ 		<br>
+ 		<label>Checkbox:</label>
+ 		<br>
+ 		<input type="checkbox" name="ck1" value="1" checked> Valor 1<br>
+ 		<input type="checkbox" name="ck1" value="2"> Valor 2<br>
+ 		<input type="checkbox" name="ck1" value="3"> Valor 3<br>
+
+ 		<br>
+ 		<br>
+ 		<input type="submit" value="Enviar" name="submit">
+	</form>
+	
+	<br>
+	<br>
+	<br>
+	<a href="Adicionando Links ao seu Website.html"><h3> Voltar para o menur de Links </h3></a>
+
+</body>
+
+</html>

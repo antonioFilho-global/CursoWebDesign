@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<!-- CSS -->
+		<link rel="stylesheet" href="public/css/bootstrap.min.css">
+		<link rel="stylesheet" href="public/css/bootstrap-theme.min.css">
+
+		<meta charset="utf-8">
+		<title>Criando Modals Com Bootstrap</title>
+		<meta name="viewport" content="width=device-widht, initial-scale=1">
+	</head>
+	<body style="background-color: #d5f4e6">
+		<div class="container">
+			<h1>Carrocel Bootstrap</h1>
+			<div id="carrossel" class="carousel slide" date-ride="carousel">
+				<!--Indicadores-->
+				<ol class="carousel-indicators">
+					<li data-target="carrossel" data-slide-to="0" class="active"></li>
+					<li data-target="carrossel" data-slide-to="1" class="active"></li>
+					<li data-target="carrossel" data-slide-to="3" class="active"></li>
+				</ol>
+
+				<!--Imagens-->
+				<div class="carrossel-inner" role="lisbox">
+					<div class="item active">
+						<img src="_ANTONIOX/public/img/cariri01.jpg" alt="Imagem 1">
+						<div class="carousel-caption">Cariri 01</div>
+					</div>	
+				</div>
+
+				<div class="carrossel-inner" role="lisbox">
+					<div class="item">
+						<img src="_ANTONIOX/public/img/cariri02.jpg" alt="Imagem 1">
+						<div class="carousel-caption">Cariri 02</div>
+					</div>	
+				</div>
+
+				<div class="carrossel-inner" role="lisbox">
+					<div class="item">
+						<img src="_ANTONIOX/public/img/cariri03.jpg" alt="Imagem 1">
+						<div class="carousel-caption">Cariri 03</div>
+					</div>	
+				</div>
+
+				<!--Controles -->
+
+				<a href="left carousel-control" href="#carrossel" role="button" data-slide="prev">
+					<!--Parei aqui -->
+					<span></span>
+				</a>
+
+			</div>
+		</div>
+			
+
+	</body>
+		<footer>
+			<!-- JS -->
+			<script src="public/js/jquery.js"></script>
+			<script src="public/js/bootstrap.bundle.min.js"></script> 
+		</footer>
+</html>

@@ -1,0 +1,220 @@
+<!doctype html>
+<html>
+<!-- o Bootstrap esta na pasta public -->
+<head>
+	<title>Projeto01</title>
+	<meta charset="utf-8">
+
+	<!-- CSS -->
+	<link href="public/css/bootstrap.min.css" rel="stylesheet">
+	<!--icone na aba do navegador -->
+	<link rel="shortcut icon"  href="public/img/logo.jpg" sizes="32*32" type="imagem/jpg">
+	<!--Meu CSS -->
+	<link href="public/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+	<!--Definindo como serar exibito conforme diferentes tipos de telas navbar-expand-lg" -->
+	<!--fixed-top fixa o menu no topo 
+		fixed-bottom fixa o menu na base  
+	-->
+	<header>
+
+		<nav class="navbar navbar-expand-lg fixed-top bg-success navbar-inverse navbar-dark">
+			<a href="#" class="navbar-brand"><img width="50px" src="public/img/logo.svg"></a>
+			<!--o button criarar o menu com icone dentro da teg span, que abrirar o conteudo da div de id menu,
+			Muito útil em telas menos de smartphones  -->	
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<!-- Links -->
+			<div id="menu" class="collapse navbar-collapse">
+				<!-- tag ul cria lista nao numerada -->
+				<!--ml-md-auto Faz o alinhamento dos links a direita -->
+				<ul class="navbar-nav ml-md-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#"><h2>Home</h2></a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="#"><h2>Quem Somos</h2></a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="#"><h2>Serviços</h2></a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="#"><h2>Fale Conosco</h2></a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<br><br>
+		
+	<div id="main">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5 col-xs-12">
+						<!--Carrosel -->
+					<div id="carrosselIndicadores" class="carousel slide" data-ride="carousel">
+					  <ol class="carousel-indicators">
+					    <li data-target="#carrosselIndicadores" data-slide-to="0" class="active"></li>
+					    <li data-target="#carrosselIndicadores" data-slide-to="1"></li>
+					    <li data-target="#carrosselIndicadores" data-slide-to="2"></li>
+					  </ol>
+					  <div class="carousel-inner">
+					    <div class="carousel-item active">
+					      <img class="d-block w-100 img-thumbnail" src="cariri01.jpg" alt="Primeiro Slide">
+					      <div class="carousel-caption">
+					      	<!--Descrição da Imagem-->
+					      	Primeira Imagem 
+					      </div>
+					    </div>
+					    <div class="carousel-item">
+					      <img class="d-block w-100 img-thumbnail" src="cariri02.jpg" alt="Segundo Slide">
+					      <div class="carousel-caption">
+					      	Segunda Imagem 
+					      </div>
+					    </div>
+					    <div class="carousel-item">
+					      <img class="d-block w-100 img-thumbnail" src="cariri03.jpg" alt="Terceiro Slide">
+					      <div class="carousel-caption">
+					      	Terceira Imagem 
+					      </div>
+					    </div>
+					  </div>
+					  <!-- Controles-->
+					  <a class="carousel-control-prev" href="#carrosselIndicadores" role="button" data-slide="prev">
+					    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					    <span class="sr-only">Anterior</span>
+					  </a>
+					  <a class="carousel-control-next" href="#carrosselIndicadores" role="button" data-slide="next">
+					    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					    <span class="sr-only">Próximo</span>
+					  </a>
+					</div>	
+				</div>
+				<!--Mensagem ao lado do carrosel-->
+				<div class="col-md-7 col-xs-12">
+					<h1>Hello world</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ullamcorper, velit nec aliquet dignissim, nulla tortor volutpat sem, vel aliquam mi metus et enim. Sed iaculis tellus sed augue molestie, ac pellentesque erat rhoncus. Maecenas sed elit felis. Suspendisse vel pulvinar nunc. Maecenas venenatis arcu vitae cursus vulputate. In blandit mauris nec lorem ultricies porttitor. Praesent cursus ante quis diam elementum, vel venenatis ipsum ultrices.</p>
+
+					<p><a class="btn btn-primary" href="#" role="button">Leia Mais</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--Div do meio-->
+	<div id="meio" class="bg-light">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-md-4">
+					<div class="thumbnail">
+						<img src="public/img/thumbnail05.jpg" class="img-thumbnail">
+						<div class="caption">
+							<h3>Sobre</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ullamcorper, velit nec aliquet dignissim, nulla tortor volutpat sem, vel aliquam mi metus et enim. Sed iaculis tellus sed augue molestie</p>
+							<p><a class="btn btn-primary" href="#" role="button">Botão</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<div>
+						<img src="public/img/thumbnail02.jpg" class="img-thumbnail">
+						<div class="caption">
+							<h3>Sobre</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ullamcorper, velit nec aliquet dignissim, nulla tortor volutpat sem, vel aliquam mi metus et enim. Sed iaculis tellus sed augue molestie</p>
+							<p><a class="btn btn-primary" href="#" role="button">Botão</a></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-md-4">
+					<div>
+						<img src="public/img/thumbnail02.jpg" class="img-thumbnail">
+						<div class="caption">
+							<h3>Sobre</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ullamcorper, velit nec aliquet dignissim, nulla tortor volutpat sem, vel aliquam mi metus et enim. Sed iaculis tellus sed augue molestie</p>
+							<p><a class="btn btn-primary" href="#" role="button">Botão</a></p>
+						</div>
+					</div>
+				</div>
+
+				<!--Usando Cards-->
+				<div class="col-sm-6 col-md-4">
+					<div class="card border border-dark bg-light">
+						<img src="public/img/thumbnail05.jpg" class="img-thumbnail" class="card-img-top rounded-pill">
+						<div class="card-body">
+							<h5 class="card-title">Endodontia: tratamento de canal</h5>
+							<p class="card-text">O tratamento de canal é um dos mais temidos pelos pacientes que frequentam o consultório odontológico. Porém, quando realizado por um bom profissional e com anestesia, o tratamento não causa dor.</p>
+							<a href="#" class="btn btn-primary">Saiba Mais</a>
+						</div>
+					</div>
+				</div>
+
+				<!--Usando Cards-->
+				<div class="col-sm-6 col-md-4">
+					<div class="card border border-dark bg-info">
+						<img src="public/img/thumbnail05.jpg" class="img-thumbnail" class="card-img-top rounded-pill">
+						<div class="card-body">
+							<h5 class="card-title">Endodontia: tratamento de canal</h5>
+							<p class="card-text">O tratamento de canal é um dos mais temidos pelos pacientes que frequentam o consultório odontológico. Porém, quando realizado por um bom profissional e com anestesia, o tratamento não causa dor.</p>
+							<a href="#" class="btn btn-primary">Saiba Mais</a>
+						</div>
+					</div>
+				</div>
+
+				<!--Usando Cards-->
+				<div class="col-sm-6 col-md-4">
+					<div class="card border border-dark bg-warning">
+						<img src="public/img/thumbnail05.jpg" class="img-thumbnail" class="card-img-top rounded-pill">
+						<div class="card-body">
+							<h5 class="card-title">Endodontia: tratamento de canal</h5>
+							<p class="card-text">O tratamento de canal é um dos mais temidos pelos pacientes que frequentam o consultório odontológico. Porém, quando realizado por um bom profissional e com anestesia, o tratamento não causa dor.</p>
+							<a href="#" class="btn btn-primary">Saiba Mais</a>
+						</div>
+					</div>
+				</div>
+			
+
+			</div>
+		</div>
+	</div>
+	<br><br>
+
+
+	<footer class="bg-dark">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<a href="#" class="col-sm-3"><img width="90px" src="public/img/logo.svg" class="rounded float-left"></a>
+				</div>
+				<div style="margin-top:10px">
+					<div class="col"><a href="#">Sobre</a></div>
+					<div class="col"><a href="#">Navegar</a></div>
+					<div class="col"><a href="#">Ajuda</a></div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12 ">
+					<p class="text-center">
+						@ 2020 Clínica | Todos os Direitos Reservados. Construido por
+						<a href="#">Antonio Alves Costa Filho</a>
+					</p>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+		<!-- JAVASCRIPT -->
+		<script src="public/js/jquery.js"></script>
+		<script src="public/js/bootstrap.bundle.min.js"></script>		
+	</footer>
+
+	</body>
+</html>

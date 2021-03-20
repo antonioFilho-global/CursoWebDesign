@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<!-- o Bootstrap esta na pasta public -->
+<head>
+	<title>Projeto</title>
+	<meta charset="utf-8">
+	<!-- CSS -->
+	<link href="public/css/bootstrap.min.css" rel="stylesheet">
+	<!--Meu CSS -->
+	<link href="public/css/style.css" rel="stylesheet">
+	<!--icone na aba do navegador -->
+	<link rel="shortcut icon"  href="public/img/logo.jpg" sizes="32*32" type="imagem/jpg">
+	<!--Adaptando tela celular -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-inverse navbar-fixed">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="#" alt="logo" title="logo"><img id="logo" src="public/img/logo2.png"></a>
+
+					<!--o button criarar o menu com icone dentro da teg span, que abrirar o conteudo da div de id menu,
+					Muito útil em telas menos de smartphones  -->	
+					<button type="button" style="margin-top:25px" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu_lista" aria-expanded="false">
+						<span style="background-color:#9bbd46" class="icon-bar"></span>
+						<span style="background-color:#9bbd46" class="icon-bar"></span>
+						<span style="background-color:#9bbd46" class="icon-bar"></span>
+					</button>
+				</div>
+				
+				<div class="collapse navbar-collapse" id="menu_lista">
+					<ul class="nav navbar navbar-right">
+						<li class="link_menu"><a href="#">Sobre</a>></li>
+						<li class="link_menu"><a href="#">Navegar</a>></li>
+						<li class="link_menu"><a href="#">Cadastrar</a>></li>
+						<li class="link_menu"><a href="#">Ajuda</a>></li>
+
+					</ul>		
+				</div>
+			</div>
+		</nav>
+	</header>
+		
+		<footer>
+			<!-- JAVASCRIPT -->
+			<script src="public/js/jquery.js"></script>
+			<script src="public/js/bootstrap.bundle.min.js"></script>
+			
+		</footer>
+
+	</body>
+</html>

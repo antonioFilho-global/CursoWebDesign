@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<!-- o Bootstrap esta na pasta public -->
+<head>
+	<title>Bootstrap 4 Navbar</title>
+	<meta charset="utf-8">
+
+	<!-- CSS -->
+	<link href="public/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body style="background-color: #d5f4e6">
+	<!--Definindo como serar exibito conforme diferentes tipos de telas navbar-expand-lg" -->
+		<nav class="navbar navbar-expand-lg fixed-top bg-dark navbar-dark">
+			<a href="#" class="navbar-brand"><img width="150px" src="sus.png"></a>
+			<!--o button criarar o menu com icone dentro da teg span, que abrirar o conteudo da div de id menu,
+			Muito útil em telas menos de smartphones  -->	
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<!-- Links -->
+			<div id="menu" class="collapse navbar-collapse">
+				<!-- tag ul cria lista nao numerada -->
+				<ul class="navbar-nav ml-md-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Quem Somos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Serviços</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Fale Conosco</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<br><br>
+
+
+
+		<footer>
+			<!-- JAVASCRIPT -->
+			<script src="public/js/jquery.js"></script>
+			<script src="public/js/bootstrap.bundle.min.js"></script>
+			
+		</footer>
+
+	</body>
+</html>

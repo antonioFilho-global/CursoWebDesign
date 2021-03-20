@@ -1,0 +1,91 @@
+/* Aprendendo CSS usando arquivo separado da página html  */
+header{
+	background-color: #35b8b0;
+	/* Definindo altura */
+	height: 60px;
+	/* Cria uma margem externa na cor do backgraund
+	margin:20px;*/
+	padding: 20px;	
+	/* Cria uma margem interna*/
+}
+
+body{
+	background:#000000;
+}
+
+footer{
+	clear: both;
+	background-color: blue;
+	height: 50px;
+	text-align: center;
+	padding: 10px;
+}
+
+
+p{
+	color: white;
+	font-size: 15px;
+	font-family: Helvetica, Arial;
+	text-shadow: 1px 1px 1px #111111;
+
+}
+
+h1{
+	color: #FF7F50;
+	text-shadow: 1px 1px 1px #111111;
+	text-align: center;
+	margin: 0 0 50px 0  ;
+}
+
+/* Tirando os espaçamentos padrões de toda 
+a pagina com o seletor *  */
+*{
+	margin: 0;
+	padding: 0;	
+	font-family: Helvetica, Arial;
+
+}
+
+#div_principal{
+	background-image:  url('city.jpg');
+	clear:both; 
+	background-size:100%; 
+	min-height: 400px;
+	padding: 80px 0 0 0;
+	
+}
+
+#logo{
+	float: left;
+}
+
+#menu{
+	float: right;
+	margin-top: 25px;
+}
+
+/*Combinação de seletores: Usando o id menu, bem como a teg a */
+#menu a{ 
+	padding:44px 20px;
+	text-decoration: none;
+	color: #111;
+	text-shadow: 1px 1px #111111; 
+}
+
+/*Faz auteração da cor quando o mouse passa nos links dentro do menu*/
+#menu a:hover{
+	background-color: #A8FCED;
+	color: #35b8b0;	
+}
+/* class */
+.container{
+	width: 960px;
+	margin: 0 auto;
+
+}
+
+/* class  efeito nno background*/
+.efeito{
+	background-color: rgba(0, 0, 0, 0.5);  
+	padding: 80px 0 80px 0 ;
+}

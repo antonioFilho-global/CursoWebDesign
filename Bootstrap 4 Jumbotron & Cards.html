@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+	<title>Jumbotron & Cards</title>
+
+	<!-- CSS -->
+	<link href="public/css/bootstrap.min.css" rel="stylesheet">
+	
+</head>
+<body style="background-color: #d5f4e6">
+
+	<div class="container-fluid">
+		<h1>Jumbotron & Cards</h1>
+		<br><br>
+	</div>	
+	<!-- Pode ser usado assim também jumbotron-fluid bem como 
+	o contender como container-fluid  -->
+	<div class="jumbotron jumbotron">
+		<div class="container-fluid">
+			<h1 class="display-4">Olá mundo Jumbotron!</h1>
+			<p class="lead">Este é meu primeiro Jumbotron</p>
+			<hr> <!-- A teg hr cria uma linha -->
+			<p>Clique para saber mais</p>
+			<a href="#" class="btn btn-primary">Saiba Mais</a>
+		</div>	
+	</div>
+<!-- ---------------------------------------------------------------------->
+
+	<!-- Criação de Cards e dimencionamento de imagem -->
+	<!-- Card 01 -->
+	<div class="contender-fluid">
+		<div class="row">
+			<div class="col-3">
+				<!--Para remover bordas border-0 -->
+				<!--É possível alterar a vizualização das imagens ex: class rounded -->
+				<div class="card border border-0 bg-warning">
+					<img src="natureza.jpg" class="card-img-top rounded-top">
+					<div class="card-body">
+						<h5 class="card-title">Card SUS 01</h5>
+						<p class="card-text">Olá esse é o meu primeiro card.</p>
+						<a href="#" class="btn btn-primary">Saiba Mais</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- Card 02 -->
+			<div class="col-3">
+				<!--Para remover bordas específicas border-right-0 border-left-0 -->
+				<div class="Card border border-right-0 border-left-0 border-danger bg-dark">
+					<img src="natureza.jpg" class="card-img-top rounded-circle">
+					<div class="card-body">
+						<h5 class="card-title">Card SUS 02</h5>
+						<p class="card-text">Olá esse é o meu primeiro card.</p>
+						<a href="#" class="btn btn-primary">Saiba Mais</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- Card 03 -->
+			<div class="col-3">
+				<!--Alterando a cor da borda -->
+				<!--E exibição da imagens de maneiras diferentes -->
+				<div class="Card border border-primary bg-success">
+					<img src="natureza.jpg" class="card-img-top rounded-pill">
+					<div class="card-body">
+						<h5 class="card-title">Card SUS 03</h5>
+						<p class="card-text">Olá esse é o meu primeiro card.</p>
+						<a href="#" class="btn btn-primary">Saiba Mais</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- Card 04 -->
+			<div class="col-3">
+				<div class="Card border border-success bg-info">
+					<img src="natureza.jpg" class="card-img-top">
+					<div class="card-body">
+						<h5 class="card-title">Card SUS 04</h5>
+						<p class="card-text">Olá esse é o meu primeiro card.</p>
+						<a href="#" class="btn btn-primary">Saiba Mais</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--Trabalhando com texto -->
+		<div class="row">
+			<div class="col-12">
+				<p class="display-4">Trabalhando com texto</p>
+				<p>Meu Texto</p>
+				<p class="text-center">Texto Centralizado</p>
+				<p class="text-left">Texto a Esquerda</p>
+				<p class="text-right">Texto a Direita</p>
+				<br>
+				<p class="text-primary">Texto em Azul</p>
+				<p class="text-success">Texto em Verde</p>
+				<p class="text-danger">Texto em Vermelho</p>
+				<p class="text-info">Texto em Azul Claro</p>
+				<p class="text-warning">Texto em laranja</p>
+				<p class="text-dark">Texto em Preto</p>
+				<p class="text-light bg-dark">Texto em Branco com Fundo Preto</p>
+			</div>
+			
+		</div>
+	</div>
+
+	
+
+
+
+	<footer>
+		<!-- JS -->
+		<script src="public/js/jquery.js"></script>
+		<script src="public/js/bootstrap.bundle.min.js"></script>
+	</footer>
+
+</body>
+</html>
